@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+typedef NS_ENUM(NSInteger, SSTabBarIndex) {
+    CalendarViewController = 0,
+    ReceiptTableViewController = 1,
+    SettingsViewController = 2,
+};
+
+@interface MainViewController : UITabBarController
+
+- (BOOL)revertSelectedIndex;
+- (void)setTabBarHidden:(BOOL)hidden;
+- (void)setTabBarHidden:(BOOL)hidden animated:(BOOL)animated;
 
 
 @end
