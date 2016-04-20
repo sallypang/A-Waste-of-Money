@@ -16,6 +16,15 @@
 		24ABF4091CC81BCF001BA33A /* A_Waste_of_MoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF4081CC81BCF001BA33A /* A_Waste_of_MoneyTests.m */; };
 		24ABF41B1CC821DD001BA33A /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF41A1CC821DD001BA33A /* NavigationController.m */; };
 		24ABF41E1CC8225A001BA33A /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF41D1CC8225A001BA33A /* Colors.m */; };
+		24ABF4211CC82480001BA33A /* CalendarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF4201CC82480001BA33A /* CalendarNavigationController.m */; };
+		24ABF4241CC824F5001BA33A /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF4231CC824F5001BA33A /* CalendarViewController.m */; };
+		24ABF4261CC825A4001BA33A /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24ABF4251CC825A4001BA33A /* Calendar.storyboard */; };
+		24ABF4281CC8265A001BA33A /* Table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24ABF4271CC8265A001BA33A /* Table.storyboard */; };
+		24ABF42B1CC8267E001BA33A /* ReceiptTableNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF42A1CC8267E001BA33A /* ReceiptTableNavigationController.m */; };
+		24ABF42E1CC8268F001BA33A /* ReceiptTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF42D1CC8268F001BA33A /* ReceiptTableViewController.m */; };
+		24ABF4311CC82783001BA33A /* SettingsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF4301CC82783001BA33A /* SettingsNavigationController.m */; };
+		24ABF4341CC82794001BA33A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF4331CC82794001BA33A /* SettingsViewController.m */; };
+		24ABF4361CC827DB001BA33A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24ABF4351CC827DB001BA33A /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,21 @@
 		24ABF41A1CC821DD001BA33A /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		24ABF41C1CC8224C001BA33A /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
 		24ABF41D1CC8225A001BA33A /* Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colors.m; sourceTree = "<group>"; };
+		24ABF41F1CC82480001BA33A /* CalendarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarNavigationController.h; sourceTree = "<group>"; };
+		24ABF4201CC82480001BA33A /* CalendarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarNavigationController.m; sourceTree = "<group>"; };
+		24ABF4221CC824F5001BA33A /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		24ABF4231CC824F5001BA33A /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		24ABF4251CC825A4001BA33A /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		24ABF4271CC8265A001BA33A /* Table.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Table.storyboard; sourceTree = "<group>"; };
+		24ABF4291CC8267E001BA33A /* ReceiptTableNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptTableNavigationController.h; sourceTree = "<group>"; };
+		24ABF42A1CC8267E001BA33A /* ReceiptTableNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptTableNavigationController.m; sourceTree = "<group>"; };
+		24ABF42C1CC8268F001BA33A /* ReceiptTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptTableViewController.h; sourceTree = "<group>"; };
+		24ABF42D1CC8268F001BA33A /* ReceiptTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptTableViewController.m; sourceTree = "<group>"; };
+		24ABF42F1CC82783001BA33A /* SettingsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationController.h; sourceTree = "<group>"; };
+		24ABF4301CC82783001BA33A /* SettingsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationController.m; sourceTree = "<group>"; };
+		24ABF4321CC82794001BA33A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		24ABF4331CC82794001BA33A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		24ABF4351CC827DB001BA33A /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +165,11 @@
 		24ABF4151CC81E21001BA33A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				24ABF4351CC827DB001BA33A /* Settings.storyboard */,
+				24ABF42F1CC82783001BA33A /* SettingsNavigationController.h */,
+				24ABF4301CC82783001BA33A /* SettingsNavigationController.m */,
+				24ABF4321CC82794001BA33A /* SettingsViewController.h */,
+				24ABF4331CC82794001BA33A /* SettingsViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -148,6 +177,11 @@
 		24ABF4161CC81E26001BA33A /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				24ABF4271CC8265A001BA33A /* Table.storyboard */,
+				24ABF4291CC8267E001BA33A /* ReceiptTableNavigationController.h */,
+				24ABF42A1CC8267E001BA33A /* ReceiptTableNavigationController.m */,
+				24ABF42C1CC8268F001BA33A /* ReceiptTableViewController.h */,
+				24ABF42D1CC8268F001BA33A /* ReceiptTableViewController.m */,
 			);
 			name = Table;
 			sourceTree = "<group>";
@@ -155,6 +189,11 @@
 		24ABF4171CC81E2C001BA33A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				24ABF4251CC825A4001BA33A /* Calendar.storyboard */,
+				24ABF41F1CC82480001BA33A /* CalendarNavigationController.h */,
+				24ABF4201CC82480001BA33A /* CalendarNavigationController.m */,
+				24ABF4221CC824F5001BA33A /* CalendarViewController.h */,
+				24ABF4231CC824F5001BA33A /* CalendarViewController.m */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -250,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24ABF3FE1CC81BCF001BA33A /* LaunchScreen.storyboard in Resources */,
+				24ABF4261CC825A4001BA33A /* Calendar.storyboard in Resources */,
+				24ABF4281CC8265A001BA33A /* Table.storyboard in Resources */,
+				24ABF4361CC827DB001BA33A /* Settings.storyboard in Resources */,
 				24ABF3FB1CC81BCF001BA33A /* Assets.xcassets in Resources */,
 				24ABF3F91CC81BCF001BA33A /* Main.storyboard in Resources */,
 			);
@@ -270,10 +312,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				24ABF41E1CC8225A001BA33A /* Colors.m in Sources */,
+				24ABF42B1CC8267E001BA33A /* ReceiptTableNavigationController.m in Sources */,
 				24ABF3F61CC81BCF001BA33A /* MainViewController.m in Sources */,
 				24ABF41B1CC821DD001BA33A /* NavigationController.m in Sources */,
+				24ABF4211CC82480001BA33A /* CalendarNavigationController.m in Sources */,
 				24ABF3F31CC81BCF001BA33A /* AppDelegate.m in Sources */,
+				24ABF42E1CC8268F001BA33A /* ReceiptTableViewController.m in Sources */,
 				24ABF3F01CC81BCF001BA33A /* main.m in Sources */,
+				24ABF4341CC82794001BA33A /* SettingsViewController.m in Sources */,
+				24ABF4311CC82783001BA33A /* SettingsNavigationController.m in Sources */,
+				24ABF4241CC824F5001BA33A /* CalendarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

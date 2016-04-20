@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Money You've Spent-->
+        <scene sceneID="Ajd-vt-ekN">
+            <objects>
+                <tableViewController storyboardIdentifier="ReceiptTableViewController" id="pBQ-LI-ELO" customClass="ReceiptTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9iT-Re-TTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nCW-ni-QlK">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nCW-ni-QlK" id="vuM-50-DQF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pBQ-LI-ELO" id="eje-9z-2Gl"/>
+                            <outlet property="delegate" destination="pBQ-LI-ELO" id="wXy-d2-tkO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Money You've Spent" id="0Qz-53-X9w"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bW-OE-uyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="403"/>
+        </scene>
+        <!--Receipt Table Navigation Controller-->
+        <scene sceneID="EKs-Ye-bEP">
+            <objects>
+                <navigationController storyboardIdentifier="ReceiptTableNavigationController" id="aBG-Kv-O7o" customClass="ReceiptTableNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="02R-zg-gh7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pBQ-LI-ELO" kind="relationship" relationship="rootViewController" id="AkH-Sa-GA4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azP-Oh-Vgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-205" y="403"/>
+        </scene>
+    </scenes>
+</document>

@@ -15,8 +15,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="k0v-Iz-mab" kind="relationship" relationship="viewControllers" id="kG9-91-Nus"/>
                         <segue destination="lrV-Sj-OA0" kind="relationship" relationship="viewControllers" id="1HC-Bb-Ru0"/>
+                        <segue destination="k0v-Iz-mab" kind="relationship" relationship="viewControllers" id="kG9-91-Nus"/>
                         <segue destination="vIj-T9-aCc" kind="relationship" relationship="viewControllers" id="QwV-H2-RtM"/>
                     </connections>
                 </tabBarController>
@@ -27,7 +27,7 @@
         <!--Calendar-->
         <scene sceneID="STF-Hs-Sfc">
             <objects>
-                <navigationController id="lrV-Sj-OA0" sceneMemberID="viewController">
+                <navigationController id="lrV-Sj-OA0" customClass="CalendarNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Calendar" id="UTe-RN-Ub2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d3e-I6-3I6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -41,7 +41,7 @@
         <!--My Table-->
         <scene sceneID="Hz6-7V-1vn">
             <objects>
-                <navigationController id="k0v-Iz-mab" sceneMemberID="viewController">
+                <navigationController id="k0v-Iz-mab" customClass="ReceiptTableNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Table" id="9Vo-tR-sg2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PGS-Dg-G8D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -55,7 +55,7 @@
         <!--Settings-->
         <scene sceneID="vDs-QL-hz8">
             <objects>
-                <navigationController id="vIj-T9-aCc" sceneMemberID="viewController">
+                <navigationController id="vIj-T9-aCc" customClass="SettingsNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="e92-xe-FGu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XFx-Mi-Zb6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
