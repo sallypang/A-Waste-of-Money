@@ -10,4 +10,6 @@
 
 @interface ReceiptTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *items;
+
 @end

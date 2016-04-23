@@ -3,24 +3,80 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Money You've Spent-->
         <scene sceneID="Ajd-vt-ekN">
             <objects>
                 <tableViewController storyboardIdentifier="ReceiptTableViewController" id="pBQ-LI-ELO" customClass="ReceiptTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9iT-Re-TTJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" id="9iT-Re-TTJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nCW-ni-QlK">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="nCW-ni-QlK" customClass="ReceiptTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="67"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nCW-ni-QlK" id="vuM-50-DQF">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4i-BP-HeW" userLabel="Name Label">
+                                            <rect key="frame" x="8" y="8" width="442" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="442" id="SdD-h5-la4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-nx-fHb">
+                                            <rect key="frame" x="316" y="37" width="276" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="276" id="ioi-Wf-bTO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF2-L4-KDu">
+                                            <rect key="frame" x="556" y="8" width="36" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.68451522435897438" green="0.68451522435897438" blue="0.68451522435897438" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGg-5t-MIV" userLabel="Price Label">
+                                            <rect key="frame" x="8" y="37" width="300" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="hfb-nx-fHb" secondAttribute="bottom" constant="8" id="0nd-lV-flL"/>
+                                        <constraint firstAttribute="trailing" secondItem="y4i-BP-HeW" secondAttribute="trailing" constant="150" id="GIc-Wd-CxM"/>
+                                        <constraint firstItem="y4i-BP-HeW" firstAttribute="top" secondItem="vuM-50-DQF" secondAttribute="top" constant="8" id="LFZ-5B-ClS"/>
+                                        <constraint firstAttribute="bottom" secondItem="WGg-5t-MIV" secondAttribute="bottom" constant="8" id="SDD-f8-pCQ"/>
+                                        <constraint firstItem="y4i-BP-HeW" firstAttribute="leading" secondItem="vuM-50-DQF" secondAttribute="leading" constant="8" id="d7G-Rb-2cr"/>
+                                        <constraint firstAttribute="trailing" secondItem="gF2-L4-KDu" secondAttribute="trailing" constant="8" id="e8g-El-Iwn"/>
+                                        <constraint firstAttribute="trailing" secondItem="hfb-nx-fHb" secondAttribute="trailing" constant="8" id="ey0-X5-6Eu"/>
+                                        <constraint firstItem="hfb-nx-fHb" firstAttribute="top" secondItem="y4i-BP-HeW" secondAttribute="bottom" constant="8" id="gbX-45-kPd"/>
+                                        <constraint firstItem="WGg-5t-MIV" firstAttribute="top" secondItem="y4i-BP-HeW" secondAttribute="bottom" constant="8" id="ibY-7t-mUm"/>
+                                        <constraint firstItem="hfb-nx-fHb" firstAttribute="top" secondItem="gF2-L4-KDu" secondAttribute="bottom" constant="8" id="lMr-57-B4I"/>
+                                        <constraint firstItem="WGg-5t-MIV" firstAttribute="leading" secondItem="vuM-50-DQF" secondAttribute="leading" constant="8" id="mI3-8w-p6a"/>
+                                        <constraint firstItem="gF2-L4-KDu" firstAttribute="top" secondItem="vuM-50-DQF" secondAttribute="top" constant="8" id="qPu-nQ-pEa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="WGg-5t-MIV" firstAttribute="width" secondItem="nCW-ni-QlK" secondAttribute="width" multiplier="1:2" id="FfN-Sd-bqa"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="cardLabel" destination="hfb-nx-fHb" id="gO7-Rw-wQq"/>
+                                    <outlet property="dateLabel" destination="gF2-L4-KDu" id="r1N-Et-WnL"/>
+                                    <outlet property="nameLabel" destination="y4i-BP-HeW" id="Sur-cN-2HH"/>
+                                    <outlet property="priceLabel" destination="WGg-5t-MIV" id="1mq-zL-hqf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -28,7 +84,14 @@
                             <outlet property="delegate" destination="pBQ-LI-ELO" id="wXy-d2-tkO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Money You've Spent" id="0Qz-53-X9w"/>
+                    <navigationItem key="navigationItem" title="Money You've Spent" id="0Qz-53-X9w">
+                        <barButtonItem key="leftBarButtonItem" title="Sort" id="V2T-Em-YFY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vlN-0U-V8X">
+                            <connections>
+                                <action selector="addItem:" destination="pBQ-LI-ELO" id="oT1-nr-juE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bW-OE-uyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
