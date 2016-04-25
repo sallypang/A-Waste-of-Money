@@ -29,6 +29,8 @@
 		24ABF5991CCADEBE001BA33A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF5981CCADEBE001BA33A /* Item.m */; };
 		24ABF59C1CCAE073001BA33A /* ItemDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF59B1CCAE073001BA33A /* ItemDoc.m */; };
 		24ABF59F1CCAE215001BA33A /* ItemDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF59E1CCAE215001BA33A /* ItemDatabase.m */; };
+		6E83BE7EE3C06AD8AEF01FA5 /* libPods-A Waste of Money.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAE626650C8FDB4472BC954 /* libPods-A Waste of Money.a */; };
+		82033CC0E088CC6AFA0EEE86 /* libPods-A Waste of MoneyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD873BF3D02AC1903C8F42FA /* libPods-A Waste of MoneyTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,12 @@
 		24ABF59B1CCAE073001BA33A /* ItemDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDoc.m; sourceTree = "<group>"; };
 		24ABF59D1CCAE215001BA33A /* ItemDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDatabase.h; sourceTree = "<group>"; };
 		24ABF59E1CCAE215001BA33A /* ItemDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDatabase.m; sourceTree = "<group>"; };
+		37BC7D7534C227C3ECA3273F /* Pods-A Waste of MoneyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A Waste of MoneyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-A Waste of MoneyTests/Pods-A Waste of MoneyTests.release.xcconfig"; sourceTree = "<group>"; };
+		4F8EC4640EAD8FDE6F3CF298 /* Pods-A Waste of Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A Waste of Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-A Waste of Money/Pods-A Waste of Money.release.xcconfig"; sourceTree = "<group>"; };
+		584DF55B0ED721014228D9F3 /* Pods-A Waste of MoneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A Waste of MoneyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A Waste of MoneyTests/Pods-A Waste of MoneyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0C9D8F6649407015502DAF9 /* Pods-A Waste of Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A Waste of Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A Waste of Money/Pods-A Waste of Money.debug.xcconfig"; sourceTree = "<group>"; };
+		AD873BF3D02AC1903C8F42FA /* libPods-A Waste of MoneyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-A Waste of MoneyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAE626650C8FDB4472BC954 /* libPods-A Waste of Money.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-A Waste of Money.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E83BE7EE3C06AD8AEF01FA5 /* libPods-A Waste of Money.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,18 +105,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82033CC0E088CC6AFA0EEE86 /* libPods-A Waste of MoneyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F7F58F206A52B59A6E6F6E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE626650C8FDB4472BC954 /* libPods-A Waste of Money.a */,
+				AD873BF3D02AC1903C8F42FA /* libPods-A Waste of MoneyTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		24ABF3E21CC81BCF001BA33A = {
 			isa = PBXGroup;
 			children = (
 				24ABF3ED1CC81BCF001BA33A /* A Waste of Money */,
 				24ABF4071CC81BCF001BA33A /* A Waste of MoneyTests */,
 				24ABF3EC1CC81BCF001BA33A /* Products */,
+				6CF67C1CF22D6545872F8AEF /* Pods */,
+				1F7F58F206A52B59A6E6F6E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,6 +249,17 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		6CF67C1CF22D6545872F8AEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C9D8F6649407015502DAF9 /* Pods-A Waste of Money.debug.xcconfig */,
+				4F8EC4640EAD8FDE6F3CF298 /* Pods-A Waste of Money.release.xcconfig */,
+				584DF55B0ED721014228D9F3 /* Pods-A Waste of MoneyTests.debug.xcconfig */,
+				37BC7D7534C227C3ECA3273F /* Pods-A Waste of MoneyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24ABF40D1CC81BCF001BA33A /* Build configuration list for PBXNativeTarget "A Waste of Money" */;
 			buildPhases = (
+				346069D70E72015B2863EAD9 /* 📦 Check Pods Manifest.lock */,
 				24ABF3E71CC81BCF001BA33A /* Sources */,
 				24ABF3E81CC81BCF001BA33A /* Frameworks */,
 				24ABF3E91CC81BCF001BA33A /* Resources */,
+				3AA42FFAFD4F06EE17AC2E79 /* 📦 Embed Pods Frameworks */,
+				53E328F30963D1212CFD17E5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24ABF4101CC81BCF001BA33A /* Build configuration list for PBXNativeTarget "A Waste of MoneyTests" */;
 			buildPhases = (
+				B7A44270707B8C70E3B2C381 /* 📦 Check Pods Manifest.lock */,
 				24ABF4001CC81BCF001BA33A /* Sources */,
 				24ABF4011CC81BCF001BA33A /* Frameworks */,
 				24ABF4021CC81BCF001BA33A /* Resources */,
+				C8DA8DE1C106BCACA8B535FC /* 📦 Embed Pods Frameworks */,
+				1998B287C22A54ABD3A24E4E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,6 +363,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1998B287C22A54ABD3A24E4E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A Waste of MoneyTests/Pods-A Waste of MoneyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		346069D70E72015B2863EAD9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3AA42FFAFD4F06EE17AC2E79 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A Waste of Money/Pods-A Waste of Money-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53E328F30963D1212CFD17E5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A Waste of Money/Pods-A Waste of Money-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7A44270707B8C70E3B2C381 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8DA8DE1C106BCACA8B535FC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A Waste of MoneyTests/Pods-A Waste of MoneyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24ABF3E71CC81BCF001BA33A /* Sources */ = {
@@ -473,6 +604,7 @@
 		};
 		24ABF40E1CC81BCF001BA33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C9D8F6649407015502DAF9 /* Pods-A Waste of Money.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "A Waste of Money/Info.plist";
@@ -484,6 +616,7 @@
 		};
 		24ABF40F1CC81BCF001BA33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8EC4640EAD8FDE6F3CF298 /* Pods-A Waste of Money.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "A Waste of Money/Info.plist";
@@ -495,6 +628,7 @@
 		};
 		24ABF4111CC81BCF001BA33A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584DF55B0ED721014228D9F3 /* Pods-A Waste of MoneyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "A Waste of MoneyTests/Info.plist";
@@ -507,6 +641,7 @@
 		};
 		24ABF4121CC81BCF001BA33A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37BC7D7534C227C3ECA3273F /* Pods-A Waste of MoneyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "A Waste of MoneyTests/Info.plist";

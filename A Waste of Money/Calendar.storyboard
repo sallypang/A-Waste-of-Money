@@ -32,9 +32,33 @@
                     <view key="view" contentMode="scaleToFill" id="wHE-pW-YKL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-1H-seK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="73"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-sq-F0j">
+                                <rect key="frame" x="0.0" y="136" width="600" height="464"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="itG-9O-4S1" firstAttribute="top" secondItem="cy4-sq-F0j" secondAttribute="bottom" id="4nG-wq-Qw1"/>
+                            <constraint firstItem="HdJ-1H-seK" firstAttribute="top" secondItem="PEs-AO-x0E" secondAttribute="bottom" id="PpZ-2G-9kJ"/>
+                            <constraint firstItem="HdJ-1H-seK" firstAttribute="leading" secondItem="wHE-pW-YKL" secondAttribute="leading" id="Y37-cO-qSR"/>
+                            <constraint firstItem="cy4-sq-F0j" firstAttribute="top" secondItem="PEs-AO-x0E" secondAttribute="bottom" constant="72" id="huO-bO-P2R"/>
+                            <constraint firstAttribute="trailing" secondItem="cy4-sq-F0j" secondAttribute="trailing" id="m3P-iH-Mik"/>
+                            <constraint firstItem="cy4-sq-F0j" firstAttribute="leading" secondItem="wHE-pW-YKL" secondAttribute="leading" id="njP-lf-R6n"/>
+                            <constraint firstAttribute="trailing" secondItem="HdJ-1H-seK" secondAttribute="trailing" id="pMS-k8-S2r"/>
+                            <constraint firstItem="itG-9O-4S1" firstAttribute="top" secondItem="HdJ-1H-seK" secondAttribute="bottom" constant="463" id="xVb-wg-21a"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Calendar" id="qEF-6v-cMF"/>
+                    <connections>
+                        <outlet property="calendarContentView" destination="cy4-sq-F0j" id="jb6-aP-1In"/>
+                        <outlet property="calendarMenuView" destination="HdJ-1H-seK" id="yMN-kv-79m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2F-Sd-nhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
