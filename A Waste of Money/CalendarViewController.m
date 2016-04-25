@@ -7,17 +7,27 @@
 //
 
 #import "CalendarViewController.h"
-#import <JTCalendar/JTCalendar.h>
 
-@interface CalendarViewController () <JTCalendarDelegate>
 
-@property (nonatomic, strong) JTCalendarManager *calendarManager;
-@property (weak, nonatomic) IBOutlet JTCalendarMenuView *calendarMenuView;
-@property (weak, nonatomic) IBOutlet JTVerticalCalendarView *calendarContentView;
+@interface CalendarViewController () {
+    NSDate *_dateSelected;
+}
 
 @end
 
 @implementation CalendarViewController
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(!self){
+        return nil;
+    }
+    
+    self.title = @"Calendar";
+    
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +42,13 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark - CalenderManagerDelegate
+
+- (void)calendar:(JTCalendarManager *)calendar didTouchDayView:(UIView<JTCalendarDay> *)dayView {
+    _dateSelected = dayView.date;
+    
 }
 
 @end

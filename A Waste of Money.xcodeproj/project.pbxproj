@@ -29,6 +29,9 @@
 		24ABF5991CCADEBE001BA33A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF5981CCADEBE001BA33A /* Item.m */; };
 		24ABF59C1CCAE073001BA33A /* ItemDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF59B1CCAE073001BA33A /* ItemDoc.m */; };
 		24ABF59F1CCAE215001BA33A /* ItemDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ABF59E1CCAE215001BA33A /* ItemDatabase.m */; };
+		24F3F8A61CCE9D7C003A5172 /* SortItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3F8A51CCE9D7C003A5172 /* SortItemViewController.m */; };
+		24F3F8A91CCE9E58003A5172 /* SortItemNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3F8A81CCE9E58003A5172 /* SortItemNavigationController.m */; };
+		24F3F8DB1CCEC05C003A5172 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3F8DA1CCEC05C003A5172 /* AddItemViewController.m */; };
 		6E83BE7EE3C06AD8AEF01FA5 /* libPods-A Waste of Money.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAE626650C8FDB4472BC954 /* libPods-A Waste of Money.a */; };
 		82033CC0E088CC6AFA0EEE86 /* libPods-A Waste of MoneyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD873BF3D02AC1903C8F42FA /* libPods-A Waste of MoneyTests.a */; };
 /* End PBXBuildFile section */
@@ -84,6 +87,12 @@
 		24ABF59B1CCAE073001BA33A /* ItemDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDoc.m; sourceTree = "<group>"; };
 		24ABF59D1CCAE215001BA33A /* ItemDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDatabase.h; sourceTree = "<group>"; };
 		24ABF59E1CCAE215001BA33A /* ItemDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDatabase.m; sourceTree = "<group>"; };
+		24F3F8A41CCE9D7C003A5172 /* SortItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortItemViewController.h; sourceTree = "<group>"; };
+		24F3F8A51CCE9D7C003A5172 /* SortItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortItemViewController.m; sourceTree = "<group>"; };
+		24F3F8A71CCE9E58003A5172 /* SortItemNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortItemNavigationController.h; sourceTree = "<group>"; };
+		24F3F8A81CCE9E58003A5172 /* SortItemNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortItemNavigationController.m; sourceTree = "<group>"; };
+		24F3F8D91CCEC05C003A5172 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		24F3F8DA1CCEC05C003A5172 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		37BC7D7534C227C3ECA3273F /* Pods-A Waste of MoneyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A Waste of MoneyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-A Waste of MoneyTests/Pods-A Waste of MoneyTests.release.xcconfig"; sourceTree = "<group>"; };
 		4F8EC4640EAD8FDE6F3CF298 /* Pods-A Waste of Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A Waste of Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-A Waste of Money/Pods-A Waste of Money.release.xcconfig"; sourceTree = "<group>"; };
 		584DF55B0ED721014228D9F3 /* Pods-A Waste of MoneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A Waste of MoneyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A Waste of MoneyTests/Pods-A Waste of MoneyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,19 +219,25 @@
 		24ABF4161CC81E26001BA33A /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				24F3F8D91CCEC05C003A5172 /* AddItemViewController.h */,
+				24F3F8DA1CCEC05C003A5172 /* AddItemViewController.m */,
 				24ABF5971CCADEBE001BA33A /* Item.h */,
 				24ABF5981CCADEBE001BA33A /* Item.m */,
+				24ABF59D1CCAE215001BA33A /* ItemDatabase.h */,
+				24ABF59E1CCAE215001BA33A /* ItemDatabase.m */,
+				24ABF59A1CCAE073001BA33A /* ItemDoc.h */,
+				24ABF59B1CCAE073001BA33A /* ItemDoc.m */,
 				24ABF4291CC8267E001BA33A /* ReceiptTableNavigationController.h */,
 				24ABF42A1CC8267E001BA33A /* ReceiptTableNavigationController.m */,
 				24ABF5941CCADD99001BA33A /* ReceiptTableViewCell.h */,
 				24ABF5951CCADD99001BA33A /* ReceiptTableViewCell.m */,
 				24ABF42C1CC8268F001BA33A /* ReceiptTableViewController.h */,
 				24ABF42D1CC8268F001BA33A /* ReceiptTableViewController.m */,
+				24F3F8A71CCE9E58003A5172 /* SortItemNavigationController.h */,
+				24F3F8A81CCE9E58003A5172 /* SortItemNavigationController.m */,
+				24F3F8A41CCE9D7C003A5172 /* SortItemViewController.h */,
+				24F3F8A51CCE9D7C003A5172 /* SortItemViewController.m */,
 				24ABF4271CC8265A001BA33A /* Table.storyboard */,
-				24ABF59A1CCAE073001BA33A /* ItemDoc.h */,
-				24ABF59B1CCAE073001BA33A /* ItemDoc.m */,
-				24ABF59D1CCAE215001BA33A /* ItemDatabase.h */,
-				24ABF59E1CCAE215001BA33A /* ItemDatabase.m */,
 			);
 			name = Table;
 			sourceTree = "<group>";
@@ -467,12 +482,15 @@
 				24ABF41E1CC8225A001BA33A /* Colors.m in Sources */,
 				24ABF42B1CC8267E001BA33A /* ReceiptTableNavigationController.m in Sources */,
 				24ABF3F61CC81BCF001BA33A /* MainViewController.m in Sources */,
+				24F3F8A91CCE9E58003A5172 /* SortItemNavigationController.m in Sources */,
 				24ABF59C1CCAE073001BA33A /* ItemDoc.m in Sources */,
 				24ABF41B1CC821DD001BA33A /* NavigationController.m in Sources */,
 				24ABF4211CC82480001BA33A /* CalendarNavigationController.m in Sources */,
 				24ABF3F31CC81BCF001BA33A /* AppDelegate.m in Sources */,
+				24F3F8A61CCE9D7C003A5172 /* SortItemViewController.m in Sources */,
 				24ABF59F1CCAE215001BA33A /* ItemDatabase.m in Sources */,
 				24ABF42E1CC8268F001BA33A /* ReceiptTableViewController.m in Sources */,
+				24F3F8DB1CCEC05C003A5172 /* AddItemViewController.m in Sources */,
 				24ABF3F01CC81BCF001BA33A /* main.m in Sources */,
 				24ABF4341CC82794001BA33A /* SettingsViewController.m in Sources */,
 				24ABF4311CC82783001BA33A /* SettingsNavigationController.m in Sources */,

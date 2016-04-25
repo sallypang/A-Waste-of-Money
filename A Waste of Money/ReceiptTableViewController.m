@@ -12,6 +12,7 @@
 #import "Item.h"
 #import "ItemDoc.h"
 #import "ItemDatabase.h"
+#import "SortItemNavigationController.h"
 
 
 @interface ReceiptTableViewController () <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
@@ -48,60 +49,69 @@
 #pragma mark - Private Functions
 
 - (IBAction)addItem:(id)sender {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"What did you spent this time"
-                                                                             message:nil
-                                                                      preferredStyle:UIAlertControllerStyleAlert];
-    
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.textAlignment = NSTextAlignmentCenter;
-        textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
-        textField.autocorrectionType = UITextAutocorrectionTypeDefault;
-        textField.returnKeyType = UIReturnKeyDone;
-        textField.placeholder = NSLocalizedString(@"Name", @"Name");
-    }];
-    
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.textAlignment = NSTextAlignmentCenter;
-        textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
-        textField.autocorrectionType = UITextAutocorrectionTypeYes;
-        textField.returnKeyType = UIReturnKeyDone;
-        textField.placeholder = NSLocalizedString(@"Price", @"Price");
-    }];
-    
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.textAlignment = NSTextAlignmentCenter;
-        textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
-        textField.autocorrectionType = UITextAutocorrectionTypeYes;
-        textField.returnKeyType = UIReturnKeyDone;
-        textField.placeholder = NSLocalizedString(@"Card", @"Card");
-    }];
-    
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel")
-                                                           style:UIAlertActionStyleCancel
-                                                         handler:^(UIAlertAction *action) {
-                                                         }];
-    [alertController addAction:cancelAction];
-    
-    UIAlertAction *saveAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Add", @"Add")
-                                                         style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction *action) {
-                                                           NSLocale *locale = [NSLocale currentLocale];
-                                                           NSDate *date = [[NSDate date] descriptionWithLocale:locale];
-                                                           ItemDoc *item = [[ItemDoc alloc] initWithName:alertController.textFields[0].text :alertController.textFields[1].text :alertController.textFields[2].text];
-                                                           [self.items addObject:item];
-                                                           [item saveData];
-                                                           NSLog(@"%@", alertController.textFields[0].text);
-                                                           [self.tableView reloadData];
-                                                       }];
-    [alertController addAction:saveAction];
-    
-    [self presentViewController:alertController animated:YES completion:nil];
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"What did you spent this time"
+//                                                                             message:nil
+//                                                                      preferredStyle:UIAlertControllerStyleAlert];
+//    
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//        textField.textAlignment = NSTextAlignmentCenter;
+//        textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+//        textField.autocorrectionType = UITextAutocorrectionTypeDefault;
+//        textField.returnKeyType = UIReturnKeyDone;
+//        textField.placeholder = NSLocalizedString(@"Name", @"Name");
+//    }];
+//    
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//        textField.textAlignment = NSTextAlignmentCenter;
+//        textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+//        textField.autocorrectionType = UITextAutocorrectionTypeYes;
+//        textField.returnKeyType = UIReturnKeyDone;
+//        textField.placeholder = NSLocalizedString(@"Price", @"Price");
+//    }];
+//    
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//        textField.textAlignment = NSTextAlignmentCenter;
+//        textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+//        textField.autocorrectionType = UITextAutocorrectionTypeYes;
+//        textField.returnKeyType = UIReturnKeyDone;
+//        textField.placeholder = NSLocalizedString(@"Card", @"Card");
+//    }];
+//    
+//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"Cancel")
+//                                                           style:UIAlertActionStyleCancel
+//                                                         handler:^(UIAlertAction *action) {
+//                                                         }];
+//    [alertController addAction:cancelAction];
+//    
+//    UIAlertAction *saveAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Add", @"Add")
+//                                                         style:UIAlertActionStyleDefault
+//                                                       handler:^(UIAlertAction *action) {
+//                                                           NSLocale *locale = [NSLocale currentLocale];
+//                                                           NSDate *date = [[NSDate date] descriptionWithLocale:locale];
+//                                                           NSString *dollarSign = @"$";
+//                                                           NSString *priceString = [NSString stringWithFormat:@"%@%@", dollarSign, alertController.textFields[1].text];
+//                                                           ItemDoc *item = [[ItemDoc alloc] initWithName:alertController.textFields[0].text :priceString:alertController.textFields[2].text];
+//                                                           [self.items addObject:item];
+//                                                           [item saveData];
+//                                                           NSLog(@"%@", alertController.textFields[0].text);
+//                                                           [self.tableView reloadData];
+//                                                       }];
+//    [alertController addAction:saveAction];
+//    
+//    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)refreshTable {
     [self.refresh endRefreshing];
     [self.tableView reloadData];
 }
+
+
+- (IBAction)sortAction:(id)sender {
+    SortItemNavigationController *controller = [[SortItemNavigationController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
 
 #pragma mark - Table view data source
 

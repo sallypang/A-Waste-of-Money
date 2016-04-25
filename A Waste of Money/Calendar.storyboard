@@ -33,11 +33,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-1H-seK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-1H-seK" customClass="JTCalendarMenuView">
                                 <rect key="frame" x="0.0" y="64" width="600" height="73"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-sq-F0j">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-sq-F0j" customClass="JTHorizontalCalendarView">
                                 <rect key="frame" x="0.0" y="136" width="600" height="464"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -56,8 +56,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Calendar" id="qEF-6v-cMF"/>
                     <connections>
-                        <outlet property="calendarContentView" destination="cy4-sq-F0j" id="jb6-aP-1In"/>
-                        <outlet property="calendarMenuView" destination="HdJ-1H-seK" id="yMN-kv-79m"/>
+                        <outlet property="calendarContentView" destination="cy4-sq-F0j" id="IqR-qX-sak"/>
+                        <outlet property="calendarMenuView" destination="HdJ-1H-seK" id="iDI-Zc-Ew5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2F-Sd-nhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
